@@ -14,7 +14,7 @@ describe("CargoTrackingDapp", function () {
     accounts = await ethers.getSigners();
     owner = accounts[0].address;
     console.log("Owner address:", owner);
-    cargoTrackingDapp = await cargoTrackingDappFactory.deploy({from: owner});
+    cargoTrackingDapp = await cargoTrackingDappFactory.deploy();
     
 
   });
