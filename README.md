@@ -12,6 +12,6 @@
 
 ![compile](https://github.com/MeryemSulum/Cargo_Tracking_Dapp/assets/118208883/922fb734-06d4-4528-a467-d61d43849a27)
 
-![test](https://github.com/MeryemSulum/Cargo_Tracking_Dapp/assets/118208883/34cfcb20-f938-41b1-b783-61c673a4cd49)
+![test](https://github.com/MeryemSulum/Cargo_Tracking_Dapp/assets/118208883/bb1fa7b1-40b8-4f4e-92d4-cad8b5e45a71)
 
 ![deploy](https://github.com/MeryemSulum/Cargo_Tracking_Dapp/assets/118208883/35026d3a-6e65-4ce0-84ef-d6fc4640936f)
