@@ -3,7 +3,9 @@
 Bu kargo takip uygulaması Solidity ve Hardhat kullanılmıştır. Kargo Takip Uygulaması; kargo oluşturarak takip numarası, gönderici adresi, alıcı adresi, takip durumu, ulaşım yolu, gönderim tarihi ve teslim tarihi gibi bilgileri içinde tutar. Takip durumunun güncellenmesini ve takip numarası ile sorgulanmasını barındırır.
 
 ![compile](https://github.com/MeryemSulum/Cargo_Tracking_Dapp/assets/118208883/922fb734-06d4-4528-a467-d61d43849a27)
+
 ![test](https://github.com/MeryemSulum/Cargo_Tracking_Dapp/assets/118208883/34cfcb20-f938-41b1-b783-61c673a4cd49)
+
 ![deploy](https://github.com/MeryemSulum/Cargo_Tracking_Dapp/assets/118208883/35026d3a-6e65-4ce0-84ef-d6fc4640936f)
 
 
