@@ -1,7 +1,8 @@
 # Kargo Takip Uygulaması
 
  **Kargo Takip Uygulaması**; kargo oluşturarak takip numarası, gönderici adresi, alıcı adresi, takip durumu, ulaşım yolu, gönderim tarihi ve teslim tarihi gibi bilgileri içinde tutar. Takip durumunun güncellenmesini ve takip numarası ile sorgulanmasını barındırır.
- Bu kargo takip uygulaması ***Solidity*** ve ***Hardhat*** kullanılmıştır.
+ 
+ Bu kargo takip uygulamasında ***Solidity*** ve ***Hardhat*** kullanılmıştır.
 
 **cargoTrackingDappAddress** = 0x5FbDB2315678afecb367f032d93F642f64180aa3
 
