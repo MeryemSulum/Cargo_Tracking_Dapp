@@ -13,15 +13,3 @@
 ![test](https://github.com/MeryemSulum/Cargo_Tracking_Dapp/assets/118208883/34cfcb20-f938-41b1-b783-61c673a4cd49)
 
 ![deploy](https://github.com/MeryemSulum/Cargo_Tracking_Dapp/assets/118208883/35026d3a-6e65-4ce0-84ef-d6fc4640936f)
-
-
-
-Try running some of the following tasks:
-
-```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat run scripts/deploy.js
-```
