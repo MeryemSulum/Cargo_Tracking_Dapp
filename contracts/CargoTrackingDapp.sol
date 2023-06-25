@@ -5,7 +5,7 @@ import "hardhat/console.sol";
 contract CargoTrackingDapp {
   // owner
     address private owner;
-
+    shipping public Status;
     // cargo informations
     struct Cargo{
         uint cargo_tracking_number;
@@ -14,8 +14,7 @@ contract CargoTrackingDapp {
         shipping Status;
         Transportation Line;
         uint shipping_date;
-        uint delivery_date;
-        
+        uint delivery_date;   
     }
     // enum - cargo line
    enum Transportation{
@@ -43,21 +42,20 @@ contract CargoTrackingDapp {
     // constructor
     constructor() {
         owner = msg.sender;
+        initialize();
     }
-    
-    shipping public Status;
 
     //MODIFIERS
     //onlyOwner
     modifier onlyOwner(){
         require(msg.sender == owner, "Only the owner can call this function!" );
-    _;
+        _;
     }
 
     //FUNCTIONS
     //Execute FUNCTIONS
     //setOwner
-    function setOwner(address _newOwner)private onlyOwner(){
+    function setOwner(address _newOwner)public onlyOwner(){
     owner = _newOwner;
     }
 
@@ -69,7 +67,7 @@ contract CargoTrackingDapp {
     shipping _Status,
     Transportation Line,
     uint shipping_date,
-    uint delivery_date) private onlyOwner{
+    uint delivery_date) public onlyOwner{
         // cargo is already in list?
         require(!isExist(cargo_tracking_number), "Cargo already exist");
        cargo[cargo_tracking_number] = Cargo(cargo_tracking_number, 
@@ -100,7 +98,7 @@ contract CargoTrackingDapp {
     }
     
     //changeStatus : change the cargo situation
-    function changeStatus(uint cargo_tracking_number,uint8 new_status) external {
+    function changeStatus(uint cargo_tracking_number,shipping new_status) external {
         require(isExist(cargo_tracking_number), "Cargo with the given track number does not exist");
         cargo[cargo_tracking_number].Status = shipping(new_status) ;
         
@@ -116,7 +114,7 @@ contract CargoTrackingDapp {
     }
 
     //track all information : all data of cargo
-    function getData( uint cargo_tracking_number ) external view
+    function getData( uint cargo_tracking_number )public view
      returns (uint, address, address, shipping,Transportation, uint, uint) {
         require(isExist(cargo_tracking_number), "Cargo with the given track number does not exist");
         Cargo memory c = cargo[cargo_tracking_number];
@@ -134,5 +132,9 @@ contract CargoTrackingDapp {
     function isExist(uint cargo_tracking_number) public view returns(bool) {
       return cargo[cargo_tracking_number].cargo_tracking_number != 0;
     }
-
+    // Initialize the contract
+    function initialize() public {
+        callCreateFunction();
+        getData(12345);
+    }
 }
